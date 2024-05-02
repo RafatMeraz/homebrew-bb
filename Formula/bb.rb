@@ -5,20 +5,20 @@
 class Bb < Formula
   desc "Generate essential files for flutter"
   homepage "https://github.com/RafatMeraz/bb"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RafatMeraz/bb/releases/download/0.0.1/bb_Darwin_x86_64.tar.gz"
-      sha256 "4351b26ccc1b9e38c03ffb0cfe9132af750b78ae46cdcac0c4a0465ece21903d"
+      url "https://github.com/RafatMeraz/bb/releases/download/0.0.2/bb_Darwin_x86_64.tar.gz"
+      sha256 "d151746d17f2800c2adbcab4e68f337575e60f6ab65f74d31151c7669b54a07c"
 
       def install
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RafatMeraz/bb/releases/download/0.0.1/bb_Darwin_arm64.tar.gz"
-      sha256 "f9f6b36237e740ac4d73cc851ebe4f9aca6341554d9c6773e927746db15de276"
+      url "https://github.com/RafatMeraz/bb/releases/download/0.0.2/bb_Darwin_arm64.tar.gz"
+      sha256 "bafc14cf26f10d6ad5168b3a42a15fdd010d7db5a4165851edf9b032d39237e1"
 
       def install
         bin.install "bb"
@@ -28,16 +28,16 @@ class Bb < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/RafatMeraz/bb/releases/download/0.0.1/bb_Linux_x86_64.tar.gz"
-      sha256 "04add5b3c8447e04dea02bae0dbfcac67040ef3eff6f82f816f8af08bc1ad0aa"
+      url "https://github.com/RafatMeraz/bb/releases/download/0.0.2/bb_Linux_x86_64.tar.gz"
+      sha256 "b2f5abc8032eb5b3780cd237ce197396a99928c319c65fbeafb3d9aa0f97c29d"
 
       def install
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RafatMeraz/bb/releases/download/0.0.1/bb_Linux_arm64.tar.gz"
-      sha256 "9175a892d52fbd4ea6e62c491dd3b36ab78c57f5275ae0750e2932fa78a14241"
+      url "https://github.com/RafatMeraz/bb/releases/download/0.0.2/bb_Linux_arm64.tar.gz"
+      sha256 "bb6db9bd787eeeb8e231ed405a43a4bea02a695ec9e9abdd2e4388f1a42fe19b"
 
       def install
         bin.install "bb"
